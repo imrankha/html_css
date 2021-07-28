@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 90%;
+  margin: 50px auto;
+  border: 1px solid #000;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (150px)[2];
+      grid-template-rows: repeat(2, 150px);
+  -ms-grid-columns: (minmax(150px, 200px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+}
+
+.div1 {
+  background-color: red;
+}
+
+.div2 {
+  background-color: #cca0a0;
+  grid-column: 1/-1;
+}
+
+.div3 {
+  background-color: #271818;
+}
+
+.div4 {
+  background-color: #1593b3;
+}
+
+.div5 {
+  background-color: #ff0;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.div6 {
+  background-color: #00f;
+}
+/*# sourceMappingURL=grid.css.map */
